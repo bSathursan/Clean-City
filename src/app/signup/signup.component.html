@@ -1,0 +1,139 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <p class="lead fw-normal mt-xl-5">SIGN UP</p>
+        <form [formGroup]="signupForm" (ngSubmit)="saveUser()">
+          <div
+            class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+          ></div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-3">
+            <input
+              type="email"
+              id="form3Example3"
+              class="form-control form-control-lg"
+              placeholder="Email/Username"
+              formControlName="email"
+              [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+            />
+            <div
+              *ngIf="submitted && f['email'].errors"
+              class="invalid-feedback"
+            >
+              <div *ngIf="f['email'].errors['required']">Email is required</div>
+              <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+            </div>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <input
+              type="password"
+              id="form3Example4"
+              class="form-control form-control-lg"
+              placeholder="Password"
+              formControlName="password"
+              [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+            />
+            <div
+              *ngIf="submitted && f['password'].errors"
+              class="invalid-feedback"
+            >
+              <div *ngIf="f['password'].errors['required']">
+                Password is required
+              </div>
+              <div *ngIf="f['password'].errors['minlength']">
+                Password must be at least 6 characters
+              </div>
+              <div *ngIf="f['password'].errors['maxlength']">
+                Username must not exceed 15 characters
+              </div>
+            </div>
+          </div>
+
+          <!--Re Password input -->
+          <div class="form-outline mb-3">
+            <input
+              type="password"
+              id="form3Example4"
+              class="form-control form-control-lg"
+              placeholder="Re-enter Password"
+              formControlName="rePassword"
+              [ngClass]="{
+                'is-invalid': submitted && f['rePassword'].errors
+              }"
+            />
+            <div
+              *ngIf="submitted && f['rePassword'].errors"
+              class="invalid-feedback"
+            >
+              <div *ngIf="f['rePassword'].errors['required']">
+                Confirm Password is required
+              </div>
+              <div *ngIf="f['rePassword'].errors['matching']">
+                Confirm Password does not match
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 text-center mt-4 pt-2">
+              <button type="submit" class="btn btn-lg">SIGN UP</button>
+              <div class="row">
+                <p class="font-weight-light mt-4">or</p>
+              </div>
+              <div class="row">
+                <p class="font-italic">Sign in with</p>
+              </div>
+              <div class="button mt-4">
+                <a
+                  class="btn btn-primary btn-floating mx-1"
+                  style="background-color: #3b5998"
+                  href="#!"
+                  role="button"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+
+                <a
+                  class="btn btn-primary btn-floating mx-1"
+                  style="background-color: #55acee"
+                  href="#!"
+                  role="button"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+
+                <a
+                  class="btn btn-primary btn-floating mx-1"
+                  style="background-color: #dd4b39"
+                  href="#!"
+                  role="button"
+                  ><i class="bi bi-google"></i
+                ></a>
+              </div>
+              <p class="small fw-bold mt-xl-5 pt-1 mb-0">
+                Already have an account?
+                <a routerLink="/signin" class="link">Sign in</a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <img
+          src="../../assets/signup.png"
+          class="rounded float-right"
+          alt="Sample image"
+        />
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <img
+          src="../../assets/signup.png"
+          class="img-fluid"
+          alt="Sample image"
+        />
+      </div>
+    </div>
+  </div>
+</section>

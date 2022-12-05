@@ -1,0 +1,57 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="container">
+        <div class="row">
+          <div class="col align-self-start"></div>
+          <div class="col align-self-center mt-xl-5">
+            <div class="card">
+              <button type="button" class="btn-close offset-xl-11" (click)="close()" aria-label="Close"></button>
+              <div class="card-body lead fw-normal mt-4">FEEDBACK</div>
+              <form [formGroup]="feedback" (ngSubmit)="saveForm()">
+                <div class="form-floating mt-xl-5">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    formControlName="description"
+                    #input
+                    maxlength="50"
+                    [ngClass]="{
+                      'is-invalid': submitted && f['description'].errors
+                    }"
+                  ></textarea>
+                  <div
+                    *ngIf="submitted && f['description'].errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f['description'].errors['required']">
+                      This is required
+                    </div>
+                  </div>
+                  <span
+                    Math.Hint.align="end"
+                    class="remaning col-md-10 text-right"
+                    >{{ input.value.length }}/50</span
+                  >
+                  <label for="floatingTextarea2" style="color: #acabab; margin-left: 10%;"
+                    >Your Feedback</label
+                  >
+
+                  <div class="row">
+                    <div class="col-md-12 text-center mt-xl-5 pt-2">
+                      <button type="submit" class="btn btn-lg">
+                        SEND FEEDBACK
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col align-self-end"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

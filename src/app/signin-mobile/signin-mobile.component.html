@@ -1,0 +1,89 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <p class="lead fw-normal">SIGN IN</p>
+        <form [formGroup]="signinMobile" (ngSubmit)="Savefrom()">
+          <div
+            class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+          ></div>
+
+          <!-- phone number input -->
+          <div class="form-outline mb-4">
+            <input
+              (keypress)="keyPress($event)"
+              required
+              type="text"
+              id="form3Example3"
+              class="form-control form-control-lg"
+              placeholder="Mobile Number"
+              formControlName="mobile"
+              [ngClass]="{ 'is-invalid': submitted && f['mobile'].errors }"
+            />
+            <div
+              *ngIf="submitted && f['mobile'].errors"
+              class="invalid-feedback"
+            >
+              <div *ngIf="f['mobile'].errors['required']">
+                Phone number is required
+              </div>
+              <div
+                *ngIf="
+                  f['mobile'].errors['pattern'] ||
+                  f['mobile'].errors['maxlength'] ||
+                  f['mobile'].errors['minlength']
+                "
+              >
+                Phone number must be at least 10 numbers
+              </div>
+            </div>
+          </div>
+          <div class="card offset-xl-3">
+            <div class="card-body">
+              
+                <div class="form-group form-check">
+                  <input
+                    type="checkbox"
+                    formControlName="acceptTerms"
+                    class="form-check-input"
+                    [ngClass]="{
+                      'is-invalid': submitted && f['acceptTerms'].errors
+                    }"
+                  />
+                  <label for="acceptTerms" class="form-check-label"
+                    >I'm not a robot</label
+                  >
+                  <div
+                    *ngIf="submitted && f['acceptTerms'].errors"
+                    class="valid-feedback"
+                  >
+                    Accept Terms is required
+                  </div>
+                </div>
+                <div class=" col-xl-4 offset-xl-8">
+                  <img
+                    src="../../assets/recaptcha.png"
+                    class="img-fluid"
+                    alt="Sample image"
+                  />
+                </div>
+              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center mt-4 pt-2">
+              <button type="submit" class="btn btn-lg">SEND CODE</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <img
+          src="../../assets/signinmobile.png"
+          class="img-thumbnail"
+          alt="Sample image"
+        />
+      </div>
+    </div>
+  </div>
+</section>

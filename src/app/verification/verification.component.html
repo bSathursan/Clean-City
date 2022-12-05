@@ -1,0 +1,55 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <p class="lead fw-normal">ENTER VERIFICATON CODE</p>
+        <form [formGroup]="verification" (ngSubmit)="verifyfrom()">
+          <div
+            class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start"
+          ></div>
+
+          <div class="form-outline mb-4 offset-xl-3">
+            <input
+              required
+              type="number"
+              id="form3Example3"
+              class="form-control form-control-lg"
+              placeholder="Code"
+              formControlName="code"
+              [ngClass]="{ 'is-invalid': submitted && f['code'].errors }"
+            />
+            <div *ngIf="submitted && f['code'].errors" class="invalid-feedback">
+              <div *ngIf="f['code'].errors['required']">Code is required</div>
+              <div
+                *ngIf="
+                f['code'].errors['pattern'] ||f['code'].errors['maxlength'] || f['code'].errors['minlength']
+                "
+              >
+                Code must be 4 numbers
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 text-center mt-4 pt-2">
+                <button type="submit" class="btn btn-lg">VERIFY</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 text-center mt-4 pt-2">
+                <a routerLink="/mobile" class="text-md-left">Resend the code</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <img
+          src="../../assets/verification.png"
+          class="img-fluid"
+          alt="Sample image"
+        />
+      </div>
+    </div>
+  </div>
+</section>

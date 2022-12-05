@@ -1,0 +1,91 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-12 col-xl-13 col-sm-12 text-center mt-4">
+        <img src="../../assets/dashboard.png" class="rounded" alt="..." />
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="card">
+          <p class="text-lg-left">We Collected</p>
+          <p class="card-text">1000+</p>
+          <p class="text-md-left">Type A Plasitcs</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <p class="text-lg-left">We Collected</p>
+          <p class="card-text">1000+</p>
+          <p class="text-md-left">Type A Plasitcs</p>
+        </div>
+      </div>
+      <div class="grid-item-left">
+        <div class="card">
+          <p class="text-lg-left">We Collected</p>
+          <p class="card-text">1000+</p>
+          <p class="text-md-left">Type A Plasitcs</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item-center">
+        <div class="card">
+          <p class="text-lg-left">We Collected</p>
+          <p class="card-text">1000+</p>
+          <p class="text-md-left">Type A Plasitcs</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-2 mt-5">
+        <div class="row col-md-12 btn-grid-container" *ngIf="showOut">
+          <div class="col-md-3">
+            <div class="btn-group" role="group">
+              <button
+                id="btnGroupDrop1"
+                type="button"
+                class="btn btn-primary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Trash Type
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <button type="button" class="btn btn-primary" (click)="navigate()">
+              Minimum Criteria
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button type="button" class="col-md-3 btn btn-primary">
+              Location <i class="bi bi-geo-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offset-xl-3 text-left" *ngIf="showMe" style="margin-left: 33%">
+      <p class="text-sm-left">pick garbage</p>
+      <button type="button" class="btn btn-light offset-xl-1">
+        Instant
+        <button type="button" class="btn btn-secondary offset-xl-10">
+          Shedule
+        </button>
+      </button>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center mt-4 pt-2">
+        <button type="button" class="btn btn-lg" (click)="toggleTag()">
+          {{ btnVal }}
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
