@@ -16,7 +16,7 @@
 form {
   margin-top: 6%;
 }
-.form-outline{
+.form-outline {
   width: 60%;
   margin-left: 20%;
 }
@@ -84,7 +84,7 @@ form {
   font: normal normal normal 13px/18px HelveticaMedium;
   color: #72c900;
 }
-.rounded{
+.rounded {
   position: absolute;
   top: 0%;
   right: 0%;
@@ -100,155 +100,153 @@ form {
 .h-custom {
   height: calc(100% - 73px);
 }
-.invalid-feedback{
+.invalid-feedback {
   margin-left: 7%;
 }
-@media only screen and (max-width:320px){
+@media only screen and (max-width: 320px) {
   .img-fluid {
     display: none;
   }
-  .rounded{
+  .rounded {
     top: 0%;
     right: 0%;
     margin-left: 10%;
     display: block;
     height: 180px;
   }
-  .lead{
+  .lead {
     margin-top: 70%;
   }
-  .text-md-right{
+  .text-md-right {
     margin-left: 30%;
   }
-  .btn-lg{
+  .btn-lg {
     width: 50%;
     height: 15%;
   }
 }
-@media only screen and (min-width:320px){
+@media only screen and (min-width: 320px) {
   .img-fluid {
     display: none;
   }
-  .rounded{
+  .rounded {
     top: 0%;
     right: 0%;
     margin-left: 10%;
     display: block;
     height: 220px;
   }
-  .lead{
+  .lead {
     margin-top: 70%;
   }
-  .text-md-right{
+  .text-md-right {
     margin-left: 40%;
   }
-  .btn-lg{
+  .btn-lg {
     width: 30%;
     height: 15%;
   }
 }
-@media only screen and (min-width:420px){
+@media only screen and (min-width: 420px) {
   .img-fluid {
     display: none;
   }
-  .rounded{
+  .rounded {
     top: 0%;
-    right: 0%;
-    margin-left: 10%;
+    margin-right: 20%;
     display: block;
     height: 220px;
   }
-  .lead{
+  .lead {
     margin-top: 55%;
   }
-  .text-md-right{
+  .text-md-right {
     margin-left: 50%;
   }
-  .btn-lg{
+  .btn-lg {
     width: 30%;
     height: 15%;
   }
 }
-@media only screen and (min-width:540px){
+@media only screen and (min-width: 540px) {
   .img-fluid {
     display: none;
   }
-  .rounded{
+  .rounded {
     top: 0%;
-    right: 0%;
-    margin-left: 10%;
+    margin-right: 25%;
     display: block;
     height: 220px;
   }
-  .lead{
+  .lead {
     margin-top: 45%;
   }
-  .text-md-right{
+  .text-md-right {
     margin-left: 60%;
   }
-  .btn-lg{
+  .btn-lg {
     width: 30%;
     height: 15%;
   }
 }
-@media only screen and (min-width:650px){
+@media only screen and (min-width: 650px) {
   .img-fluid {
     display: none;
   }
-  .rounded{
+  .rounded {
     top: 0%;
-    right: 0%;
+    margin-right: 30%;
     display: block;
     height: 220px;
   }
-  .lead{
+  .lead {
     margin-top: 40%;
   }
-  .text-md-right{
+  .text-md-right {
     margin-left: 70%;
   }
-  .btn-lg{
+  .btn-lg {
     width: 30%;
     height: 15%;
   }
 }
-@media only screen and (min-width:900px){
+@media only screen and (min-width: 900px) {
   .img-fluid {
     display: none;
   }
-  .rounded{
+  .rounded {
     top: 0%;
     right: 0%;
     display: block;
     height: 300px;
   }
-  .lead{
+  .lead {
     margin-top: 50%;
   }
-  .text-md-right{
+  .text-md-right {
     margin-left: 40%;
   }
-  .btn-lg{
+  .btn-lg {
     width: 30%;
     height: 15%;
   }
 }
-@media only screen and (min-width:992px){
+@media only screen and (min-width: 992px) {
   .img-fluid {
     display: block;
     bottom: 0%;
     right: 0%;
   }
-  .rounded{
+  .rounded {
     display: none;
   }
-  .lead{
+  .lead {
     margin-top: 6%;
   }
-  .text-md-right{
+  .text-md-right {
     margin-left: 60%;
   }
-  .btn-lg{
+  .btn-lg {
     width: 20%;
     height: 13%;
   }

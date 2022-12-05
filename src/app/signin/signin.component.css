@@ -153,8 +153,7 @@ form {
   }
   .rounded{
     top: 0%;
-    right: 0%;
-    margin-left: 10%;
+    margin-right: 20%;
     display: block;
     height: 220px;
   }
@@ -197,7 +196,7 @@ form {
   }
   .rounded{
     top: 0%;
-    right: 0%;
+    margin-right: 30%;
     display: block;
     height: 220px;
   }

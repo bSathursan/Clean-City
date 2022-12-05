@@ -52,12 +52,14 @@ form {
   border-radius: 90px;
   border: 0px;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font: normal normal normal 15px/20px Helvetica Neue;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
   width: 50%;
-  height: 100%;
+  height: auto;
 }
 .text-md-left {
   text-align: center;
@@ -85,7 +87,9 @@ form {
     margin-top: 15%;
   }
   .btn-lg {
-    width: 60%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 @media (min-width: 320px) {
@@ -106,7 +110,9 @@ form {
     width: 50%;
   }
   .btn-lg {
-    width: 70%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
   .text-md-left{
     text-align: center;
@@ -125,7 +131,9 @@ form {
     margin-top: 15%;
   }
   .btn-lg {
-    width: 60%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 @media (min-width: 440px) {
@@ -145,7 +153,9 @@ form {
     width: 50%;
   }
   .btn-lg {
-    width: 60%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -166,7 +176,9 @@ form {
     width: 30%;
   }
   .btn-lg {
-    width: 55%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -187,7 +199,9 @@ form {
     width: 30%;
   }
   .btn-lg {
-    width: 55%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -204,7 +218,9 @@ form {
     margin-top: 10%;
   }
   .btn-lg {
-    width: 40%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -225,7 +241,9 @@ form {
     margin-left: 30%;
   }
   .btn-lg {
-    width: 30%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -247,7 +265,9 @@ form {
     margin-left: 30%;
   }
   .btn-lg {
-    width: 30%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -269,7 +289,9 @@ form {
     margin-left: 35%;
   }
   .btn-lg {
-    width: 50%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -291,7 +313,9 @@ form {
     margin-left: 35%;
   }
   .btn-lg {
-    width: 50%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -313,7 +337,9 @@ form {
     margin-left: 35%;
   }
   .btn-lg {
-    width: 50%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -336,8 +362,9 @@ form {
   }
   .btn-lg {
     margin-top: -5%;
-    width: 30%;
-    height: 150%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
@@ -364,8 +391,9 @@ form {
     margin-left: 34%;
   }
   .btn-lg {
-    width: 50%;
-    height: 120%;
+    width: auto;
+    text-align: center;
+    height: auto;
   }
 }
 
